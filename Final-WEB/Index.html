@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Ryle Franz G. Dela Cruz - Web Developer and Technology Enthusiast">
+    <title>RDC Portfolio | Ryle Franz Dela Cruz</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>RDC Portfolio</h1>
+        <nav>
+            <div class="hamburger" role="button" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-menu" role="navigation">
+                <ul>
+                    <li><a href="mailto:rylefrdelacruz@gmail.com" aria-label="Email me" class="nav-link"><i class="far fa-envelope"></i> rylefrdelacruz@gmail.com</a></li>
+                    <li><span class="nav-link"><i class="fas fa-phone"></i> 1(902) xxx-xxxx</span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Your Student</p>
+                <div class="hero-buttons">
+                    <a href="#about-me" class="cta-button">Learn More</a>
+                    <a href="#contact" class="cta-button secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me" class="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p class="intro">Hello! I am <strong>Ryle Franz G. Dela Cruz</strong>, born in the Philippines on March 7, 2006. 
+                   Currently pursuing my passion for technology in my first year at the Institute of Technology. 
+                   When I'm not coding, you'll find me on the basketball court or playing video games.</p>
+            </div>
+        </section>
+
+        <section class="hobbies">
+            <h3>My Hobbies & Interests</h3>
+            <div class="hobby-grid">
+                <article class="hobby-item">
+                    <div class="hobby-card">
+                        <div class="hobby-content">
+                            <h4><i class="fas fa-basketball-ball"></i> Basketball</h4>
+                            <p>Playing basketball helps me stay active and teaches valuable lessons about teamwork and perseverance.</p>
+                            <div class="hobby-gallery">
+                                <img src="basketball.jpg" alt="Playing basketball" class="gallery-image">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hobby-item">
+                    <div class="hobby-card">
+                        <div class="hobby-content">
+                            <h4><i class="fas fa-utensils"></i> Culinary Arts</h4>
+                            <p>Cooking allows me to be creative while bringing joy to others through delicious meals.</p>
+                            <div class="hobby-gallery">
+                                <img src="culinary.jpg" alt="Prepared dish" class="gallery-image">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hobby-item">
+                    <div class="hobby-card">
+                        <div class="hobby-content">
+                            <h4><i class="fas fa-gamepad"></i> Gaming</h4>
+                            <p>Gaming helps me develop problem-solving skills while connecting with friends around the world.</p>
+                            <div class="hobby-gallery">
+                                <img src="gaming.jpg" alt="Gaming setup" class="gallery-image">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h3>Professional Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Personal Qualities</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Exceptional work ethic and dedication</li>
+                        <li><i class="fas fa-check"></i> Creative problem-solving abilities</li>
+                        <li><i class="fas fa-check"></i> Strong passion for continuous learning</li>
+                        <li><i class="fas fa-check"></i> Excellent team collaboration skills</li>
+                        <li><i class="fas fa-check"></i> Effective time management</li>
+                        <li><i class="fas fa-check"></i> Outstanding communication abilities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Get in Touch</h3>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="far fa-envelope"></i> <a href="mailto:rylefrdelacruz@gmail.com">rylefrdelacruz@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> 1(902) xxx-xxxx</li>
+                        <li><i class="far fa-file-alt"></i> <a href="https://docs.google.com/document/d/1BCECseObmoj_3qeXevs_GNikIjidpu5Q5KsQHCjiqkI/edit?usp=sharing" 
+                              class="resume" 
+                              target="_blank" 
+                              rel="noopener noreferrer">View Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-github" aria-hidden="true"></i> 
+                <span>GitHub</span>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2024 Ryle Franz G. Dela Cruz. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>
